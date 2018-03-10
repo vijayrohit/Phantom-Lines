@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		$("a").on('click', function(event) {
+		if (this.hash !== "") {
+		event.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+        scrollTop: $(hash).offset().top
+		}, 800, function(){
+        window.location.hash = hash;
+		});
+		}
+		});
+		});
+		</script>
+	</head>
+	<body>
+		<a href="#" style="text-decoration:none;font-family: 'Bowlby One SC', cursive;color:#282828;position:relative;top:10px;left:10px;">PHANTOM LINES</a>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#review">Visit Us</a></li>
+			</ul>
+		</nav>
+		<div class="slider-holder">
+        <span id="slider-image-1"></span>
+        <span id="slider-image-2"></span>
+        <span id="slider-image-3"></span>
+        <div class="image-holder">
+            <img src="1.jpg" class="slider-image" />
+            <img src="2.jpg" class="slider-image" />
+            <img src="3.jpg" class="slider-image" />
+        </div>
+        <div class="button-holder">
+            <a href="#slider-image-1" class="slider-change"></a>
+            <a href="#slider-image-2" class="slider-change"></a>
+            <a href="#slider-image-3" class="slider-change"></a>
+        </div>
+		</div>
+		<div id="about">
+			<h1>ABOUT US</h1>
+			<p>Phantom Lines, Located in Chennai, Tamil Nadu, India was established in 2016. The company focusses on Graphic & Web Design and Marketing, they offer a number of services including online marketing, website design/development, mobile website, identity branding/logo design, media collateral/print design and domain/web hosting/e-mail.</p>
+		</div>
+		<div id="team">
+			<h1>TEAM</h1>
+		
+		</div>
+		<div id="contact">
+			<h1>CONTACT US</h1>
+		</div>
+		<div id="review">
+			<h1>VISIT US</h1>
+		</div>
+	</body>
+</html>
