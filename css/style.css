@@ -1,0 +1,204 @@
+body{
+background-color:#f2f2f2;
+margin:0px;
+padding:0px;
+}
+footer{
+background-color:#f44165;
+font-family: 'Bowlby One SC', cursive;
+color:#f2f2f2;
+text-align:center;
+font-size:10px;
+}
+footer img{
+width:2%;
+}
+.logos{
+float:right;
+margin-top:80px;
+display:block;
+}
+form{
+position:relative;
+top:100px;
+}
+.nav-bar{
+font-family: 'Bowlby One SC', cursive;
+ padding:0px;
+ margin:0px;
+ float:right;
+ margin-bottom:20px;
+ background-color:#f2f2f2;
+}
+.nav-bar li{
+float:left;
+display:inline;
+text-decoration:none;
+padding-right:10px;
+}
+.nav-bar a{
+display:block;
+text-decoration:none;
+color:#282828;
+}
+.nav-bar li a:hover{
+color:white;
+background-color:#282828;
+border-radius:5px;
+width:100%;
+}
+#about1{
+margin-top:20px;
+background-color:#f2f2f2;
+height:400px;
+}
+#about{
+background-color:#51c2ff;
+height:400px;
+}
+#about p{
+font-family: 'Fira Sans', sans-serif;
+font-size:25px;
+text-align:justify;
+color:white;
+width:40%;
+float:right;
+margin-top:80px;
+margin-right:40px;
+
+}
+#about h1{
+font-family: 'Bowlby One SC', cursive;
+float:left;
+color:white;
+margin-top:130px;;
+font-size:80px;
+margin-left	:60px;
+}
+#team{
+background-color:#41c170;
+height:400px;
+}
+#team h1{
+font-family: 'Bowlby One SC', cursive;
+float:left;
+color:white;
+margin-top:130px;;
+font-size:80px;
+margin-left	:60px;
+}
+.photo {
+	perspective: 1000px;
+	position:relative;
+	left:950px;
+	top:20px;
+}
+.photo:hover .coin, .photo.hover .flipper{
+	transform: rotateY(180deg);
+}
+
+.photo, .front, .back {
+	width: 350px;
+	height: 350px;
+}
+.coin {
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+.back {
+	transform: rotateY(180deg);
+}
+#contact{
+background-color:#f49542;
+height:500px;
+}
+#contactl h1{
+font-family: 'Bowlby One SC', cursive;
+float:left;
+color:white;
+margin-top:180px;
+font-size:80px;
+margin-left	:60px;
+}
+#contactl h4{
+font-family: 'Bowlby One SC', cursive;
+float:left;
+color:white;
+margin-top:330px;
+position:relative;
+right:550px;
+bottom:80px;
+}
+#contactl h5{
+font-family: 'Cabin Condensed', sans-serif;
+float:left;
+color:white;
+margin-top:330px;
+position:relative;
+right:540px;
+bottom:75px;
+}
+#contactr{
+font-family: 'Bowlby One SC', cursive;
+color:white;
+float:right;
+position:relative;
+right:100px;
+margin:0px;
+padding:0px;
+}
+#review{
+background-color:#f44165;
+height:400px;
+}
+#review h1{
+font-family: 'Bowlby One SC', cursive;
+float:left;
+color:white;
+margin-top:150px;
+font-size:80px;
+margin-left	:60px;
+}
+
+		.slider-holder
+        {
+            width: 100%;
+            height: 400px;
+            background-color: #f2f2f2;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+        .image-holder
+        {
+            width: 2400px;
+            background-color:#f2f2f2;
+            height: 400px;
+            clear: both;
+            position: relative;
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+        
+        .slider-image
+        {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }

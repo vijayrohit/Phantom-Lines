@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sample</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bowlby+One+SC" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
+		<link href="img/logo.png" rel="icon">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<script>
+		$(document).ready(function(){
+		$("a").on('click', function(event) {
+		if (this.hash !== "") {
+		event.preventDefault();
+		var hash = this.hash;
+		$('html, body').animate({
+        scrollTop: $(hash).offset().top
+		}, 1000, function(){
+        window.location.hash = hash;
+		});
+		}
+		});
+		});
+		</script>
+	</head>
+	<body>
+		<a href="#" style="text-decoration:none;font-family: 'Bowlby One SC', cursive;color:#282828;position:relative;top:10px;left:10px;">PHANTOM LINES</a>
+		<nav class="nav-bar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+				<li><a href="#review">Visit Us</a></li>
+			</ul>
+		</nav>
+		<div class="slider-holder">
+        <div class="image-holder">
+            <img src="img/1.png" class="slider-image" />
+            <img src="img/2.png" class="slider-image" />
+            <img src="img/3.png" class="slider-image" />
+        </div>
+		<script>
+			var myIndex = 0;
+			carousel();
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("slider-image");
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+				}	
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 3000);
+			}
+		</script>
+		</div>
+		<div id="about" class="w3-container w3-center w3-animate-top">
+			<h1>ABOUT US</h1>
+			<p>Phantom Lines, Located in Chennai, Tamil Nadu, India was established in 2016. The company focusses on Graphic & Web Design and Marketing, they offer a number of services including online marketing, website design/development, mobile website, identity branding/logo design, media collateral/print design and domain/web hosting/e-mail.</p>
+		</div>
+		<div id="team" class="w3-center w3-animate-left">
+			<h1>TEAM</h1>
+			<div class="photo" ontouchstart="this.classList.toggle('hover');">
+				<div class="coin">
+					<div class="front">
+						<img src="img/rohit.png">
+					</div>
+					<div class="back">
+						<img src="img/back.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="contact" class="w3-center w3-animate-right">
+			<div id="contactl">
+				<h1>CONTACT US</h1>
+			</div>
+			<div id="contactr">
+			<!--<h1>CONTACT US</h1>
+				<h4>EMAIL :</h4>
+				<h5>phantomlinesinfo@gmail.com</h5>-->
+				<form method="POST" action="php/db.php">
+					<table>
+						<tr>
+							<td>
+								<label>Name:
+								<input type="text" name="name">
+								</label>
+							</td>
+							<td>
+								<label>Email:
+								<input type="text" name="email">
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label style="position:relative;right:100px;">Message:
+								</label>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<textarea style="width:200%;height:200px;" name="message"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="submit" name="submit" style="width:100%;border:none;background-color:white;font-family: 'Bowlby One SC', cursive;color:#404142;" >
+							</td>
+							<td>
+								<input type="reset" name="reset" style="width:100%;border:none;background-color:white;font-family: 'Bowlby One SC', cursive;color:#404142;" >
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+		<div id="review" class="w3-center w3-animate-bottom">
+			<h1>VISIT US</h1>
+			<div class="logos">
+				<a href="https://www.facebook.com/phaantoo" target="_blank"><img src="img/fb.png" style="position:relative;right:200px;top:100px;margin-right:40px;"></a>
+				<a href="https://www.instagram.com/phantomlines" target="_blank"><img src="img/insta.png" style="position:relative;right:200px;top:100px;margin-right:40px;"></a>
+				<a href="https://www.youtube.com/channel/UCIq_GMQ5T3idlZOa1bM4l-Q" target="_blank"><img src="img/yt.png" style="position:relative;right:200px;top:100px;"></a>
+			</div>
+		</div>
+		<footer>
+			<img src="img/logo.png">
+			<p>PHANTOM LINES 2018</p>
+		</footer>
+	</body>
+</html>
